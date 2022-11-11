@@ -4,7 +4,7 @@ import styles from "./navbar.module.css";
 
 export default function Navbar(props) {
   return (
-    <div className="w-full bg-gray-900 flex flex-row justify-between p-3 px-5 items-center">
+    <div className={styles.navbar}>
       <Link href="/">
         <Image
           className={styles.logo}
