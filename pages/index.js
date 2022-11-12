@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Layout from "./layout";
 import { Source_Serif_4 } from "@next/font/google";
+import SwiperCarousel from "../components/swiper-carousel";
 
 const source_serif_4 = Source_Serif_4();
 
@@ -33,6 +34,7 @@ export default function Home() {
             <h1>VINUS PIZZA OG KEBAB</h1>
           </div>
         </div>
+        <SwiperCarousel/>
         <footer className={styles.footer}>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
