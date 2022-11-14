@@ -3,15 +3,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20rem;
+    background-color: #BD2A22;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.itemWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .item {
-    align-self: center;
-    height: 20rem;
     width: 100%;
-    background-color: rgb(255, 132, 0);
+    max-width: 20rem;
+    background-color: inherit;
+    /* border: 2px solid black; */
+    border-radius: 2rem;
+    padding: 1rem;
 }
-
+.itemTitle{
+  color: black;
+  margin-bottom: 1rem;
+}
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -28,4 +40,30 @@
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.menuItemTitle {
+  font-size: .7rem;
+  font-weight: 600;
+}
+
+.menuItemDiscription {
+  font-size: 0.6rem;
+  font-weight: 200;
+}
+
+.menuItemPrice {
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
