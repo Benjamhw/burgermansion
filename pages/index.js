@@ -2,15 +2,16 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Layout from "./layout";
-import { Source_Serif_4 } from "@next/font/google";
+import { Source_Serif_4, Oswald } from "@next/font/google";
 import SwiperCarousel from "../components/swiper-carousel";
 
 const source_serif_4 = Source_Serif_4();
+const oswald = Oswald();
 
 export default function Home() {
   return (
     <Layout>
-      <div className={`${styles.container}`}>
+      <div className={`${styles.container} ${oswald.className}`}>
         <Head>
           <title>Vinus Pizza og Kebab | Demo Nettside</title>
           <meta
