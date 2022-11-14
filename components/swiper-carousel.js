@@ -52,9 +52,9 @@ export default function SwiperCarousel(props) {
                     }
                 }}
             >
-                <SwiperSlide><Item title="KEBAB"/></SwiperSlide>
-                <SwiperSlide><Item title={<h1>KEBAB<span style={{color:'white'}}>PIZZA</span></h1>}/></SwiperSlide>
-                <SwiperSlide><Item title="PIZZA"/></SwiperSlide>
+                <SwiperSlide><Item title={<h1 className={styles.itemTitle}>KEBAB<span style={{color:'white'}}>PIZZA</span></h1>}/></SwiperSlide>
+                <SwiperSlide><Item title={<h1 className={styles.itemTitle}>KEBAB<span style={{color:'white'}}>PIZZA</span></h1>}/></SwiperSlide>
+                <SwiperSlide><Item title={<h1 className={styles.itemTitle}>KEBAB<span style={{color:'white'}}>PIZZA</span></h1>}/></SwiperSlide>
             </Swiper>
         </div>
         </div>
@@ -102,9 +102,9 @@ const Item = (props) => {
     return (
         <div className={styles.itemWrapper}>
             <div className={styles.item}>
-                <h1 className={styles.itemTitle}>{title}</h1>
-                {menuItems.map(x=>(
-                    <MenuItem {...x} key={x.nr}/>
+                {title}
+                {menuItems.map((x,i)=>(
+                    <MenuItem {...x} key={i}/>
                 ))}
             </div>
         </div>
