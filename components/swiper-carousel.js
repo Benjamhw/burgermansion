@@ -1,22 +1,26 @@
-import { useEffect, useState } from 'react'
 import styles from './swiper-carousel.module.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
-// Import Swiper styles
 import "swiper/css/bundle"
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-
-
-// import required modules
-import { EffectCoverflow, Pagination } from "swiper";
 import Image from 'next/image';
 
 export default function SwiperCarousel(props) {
     
     return (
         <div className={styles.container}>
+            <div className='flex justify-start p-10 text-2xl'>
+                <Image 
+                    src="/images/menuText.svg" 
+                    alt="Kebab og pizza meny icon"
+                    width="150"
+                    height="50"
+                />
+            </div>
+        <div>
             <Swiper 
                 effect={"coverflow"}
                 grabCursor={true}
@@ -29,8 +33,10 @@ export default function SwiperCarousel(props) {
                     modifier: 1,
                     slideShadows: false
                 }}
-                pagination={true}
-                modules={[EffectCoverflow, Pagination]}
+                pagination={{
+                    dynamicBullets: true,
+                }}
+                modules={[EffectCoverflow, Pagination, Navigation]}
                 className="mySwiper"
                 initialSlide={1}
                 loop={true}
@@ -40,13 +46,17 @@ export default function SwiperCarousel(props) {
                     },
                     940: {
                         slidesPerView:3
+                    },
+                    1500: {
+                        slidesPerView:4
                     }
                 }}
             >
                 <SwiperSlide><Item title="KEBAB"/></SwiperSlide>
-                <SwiperSlide><Item title="KEBABPIZZA"/></SwiperSlide>
+                <SwiperSlide><Item title={<h1>KEBAB<span style={{color:'white'}}>PIZZA</span></h1>}/></SwiperSlide>
                 <SwiperSlide><Item title="PIZZA"/></SwiperSlide>
             </Swiper>
+        </div>
         </div>
     )
 }
