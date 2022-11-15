@@ -1,6 +1,6 @@
 import styles from './swiper-carousel.module.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import { EffectCoverflow, Pagination, Navigation } from "swiper";
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper";
 
 import "swiper/css/bundle"
 import "swiper/css";
@@ -8,7 +8,9 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import Image from 'next/image';
 
-export default function SwiperCarousel(props) {
+export default function SwiperCarousel({itemData}) {
+
+
     
     return (
         <div className={styles.container}>
@@ -25,6 +27,7 @@ export default function SwiperCarousel(props) {
                 effect={"coverflow"}
                 grabCursor={true}
                 centeredSlides={true}
+                autoHeight={true}
                 slidesPerView={"auto"}
                 coverflowEffect={{
                     rotate: 50,
@@ -36,10 +39,14 @@ export default function SwiperCarousel(props) {
                 pagination={{
                     dynamicBullets: true,
                 }}
-                modules={[EffectCoverflow, Pagination, Navigation]}
+                modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
                 className="mySwiper"
                 initialSlide={1}
                 loop={true}
+                autoplay={{
+                    delay: 3000,
+                    stopOnLastSlide: false,
+                }}
                 breakpoints={{
                     480: {
                         slidesPerView:2
@@ -52,9 +59,13 @@ export default function SwiperCarousel(props) {
                     }
                 }}
             >
+                {itemData.map(item => (
+                    <SwiperSlide key={item.name}><Item data={item}/></SwiperSlide>
+                ))}
+
+                {/* <SwiperSlide><Item title={<h1 className={styles.itemTitle}>KEBAB<span style={{color:'white'}}>PIZZA</span></h1>}/></SwiperSlide>
                 <SwiperSlide><Item title={<h1 className={styles.itemTitle}>KEBAB<span style={{color:'white'}}>PIZZA</span></h1>}/></SwiperSlide>
-                <SwiperSlide><Item title={<h1 className={styles.itemTitle}>KEBAB<span style={{color:'white'}}>PIZZA</span></h1>}/></SwiperSlide>
-                <SwiperSlide><Item title={<h1 className={styles.itemTitle}>KEBAB<span style={{color:'white'}}>PIZZA</span></h1>}/></SwiperSlide>
+                <SwiperSlide><Item title={<h1 className={styles.itemTitle}>KEBAB<span style={{color:'white'}}>PIZZA</span></h1>}/></SwiperSlide> */}
             </Swiper>
         </div>
         </div>
@@ -63,7 +74,7 @@ export default function SwiperCarousel(props) {
 
 const Item = (props) => {
 
-    const {title} = props
+    const {data} = props
 
     const menuItems = [
         {
@@ -98,12 +109,18 @@ const Item = (props) => {
         },
     ]
 
-
     return (
         <div className={styles.itemWrapper}>
             <div className={styles.item}>
-                {title}
-                {menuItems.map((x,i)=>(
+                <h1 className={styles.itemTitle}>
+                {data.name.split(' ').map((subStr, i) => (
+                    <span key={i} style={{
+                        ...(i % 2 !== 0 ? {color:'white'} : {})
+                    }}>{subStr}</span>    
+                ))}
+                </h1>
+                {/* <h1 className={styles.itemTitle}>{data.name.split(' ')[0]}<span>{data.name.split(' ').length >[1]}</span></h1> */}
+                {data.items.map((x,i)=>(
                     <MenuItem {...x} key={i}/>
                 ))}
             </div>
@@ -121,7 +138,7 @@ const MenuItem = (props) => {
                 <h1 className={styles.menuItemDiscription}>{discription}</h1>
             </div>
             <div>
-                <h1 className={styles.menuItemPrice}>{price},-</h1>
+                <h1 className={styles.menuItemPrice}>{120},-</h1>
             </div>
         </div>
     )

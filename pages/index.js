@@ -4,11 +4,22 @@ import styles from "../styles/Home.module.css";
 import Layout from "./layout";
 import { Source_Serif_4, Oswald } from "@next/font/google";
 import SwiperCarousel from "../components/swiper-carousel";
+import { getFoodMenuData } from "../lib/food_menus";
 
 const source_serif_4 = Source_Serif_4();
 const oswald = Oswald();
 
-export default function Home() {
+export async function getStaticProps() {
+  const allFoodMenuData = getFoodMenuData();
+  return {
+    props: {
+      allFoodMenuData,
+    },
+  };
+}
+
+export default function Home({allFoodMenuData}) {
+  console.log(allFoodMenuData)
   return (
     <Layout>
       <div className={`${styles.container} ${oswald.className}`}>
@@ -35,7 +46,7 @@ export default function Home() {
             <h1>VINUS PIZZA OG KEBAB</h1>
           </div>
         </div>
-        <SwiperCarousel/>
+        <SwiperCarousel itemData={allFoodMenuData}/>
         <footer className={styles.footer}>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

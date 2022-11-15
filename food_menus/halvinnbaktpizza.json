@@ -1,0 +1,17 @@
+{
+    "name": "HALVINNBAKT PIZZA",
+    "items": [
+        {
+            "nr": 29,
+            "title": "Vikingbåt",
+            "discription": "Tomatsaus, ost, løk, biff, ferske tomater og hvitløksaus",
+            "price": 160
+        },
+        {
+            "nr": 30,
+            "title": "Titanic",
+            "discription": "Tomatsaus, ost, pepperoni, kebabkjøtt, isbergsalat og kebabsaus",
+            "price": 160
+        }
+    ]
+}

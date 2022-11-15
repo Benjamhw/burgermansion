@@ -1,0 +1,41 @@
+{
+    "name": "KEBAB",
+    "items": [
+        {
+            "nr": 1,
+            "title": "Kebab i pitabrød",
+            "discription": "Isbergsalat, tomat, mais, løk, gyroskjøtt og saus",
+            "price": 110
+        },
+        {
+            "nr": 2,
+            "title": "Hawaii kebab i pitabrød",
+            "discription": "Isbergsalat, tomat, mais, ananas, løk, gyroskjøtt og kebabsaus",
+            "price": 115
+        },
+        {
+            "nr": 3,
+            "title": "Kebabrull",
+            "discription": "Isbergsalat, tomat, mais, løk, gyroskjøtt og kebabsaus",
+            "price": 120
+        },
+        {
+            "nr": 4,
+            "title": "Kebabrull m/fetaost",
+            "discription": "Gyroskjøtt, fetaost, isbergsalat, løk, mais, tomat og saus",
+            "price": 130
+        },
+        {
+            "nr": 5,
+            "title": "Kebabtallerken",
+            "discription": "Gyroskjøtt, isbergsalat, løk, tomat, mais, pommes frites og saus",
+            "price": 140
+        },
+        {
+            "nr": 6,
+            "title": "Kebabtallerken m/fetaost",
+            "discription": "Isbergsalat, tomat, løk, mais, fetaost, pommes frites, gyroskjøtt og saus",
+            "price": 110
+        }
+    ]
+}

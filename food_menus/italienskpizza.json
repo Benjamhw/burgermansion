@@ -1,0 +1,131 @@
+{
+    "name": "ITALIENSK PIZZA",
+    "items": [
+        {
+            "nr": 12,
+            "title": "Vinus spesial",
+            "discription": "Tomatsaus, ost, skinke, salami, paprika, løk og kjøttdeig",
+            "price": {
+                "medium": 170,
+                "stor": 270
+            }
+        },
+        {
+            "nr": 13,
+            "title": "Vesuvio",
+            "discription": "Tomatsaus, ost og skinke",
+            "price": {
+                "medium": 140,
+                "stor": 240
+            }
+        },
+        {
+            "nr": 14,
+            "title": "Margarita",
+            "discription": "Tomatsaus og ost",
+            "price": {
+                "medium": 140,
+                "stor": 240
+            }
+        },
+        {
+            "nr": 15,
+            "title": "Hawaii",
+            "discription": "Tomatsaus, ost, skinke og ananas",
+            "price": {
+                "medium": 150,
+                "stor": 250
+            }
+        },
+        {
+            "nr": 16,
+            "title": "Pepperoni",
+            "discription": "Tomatsaus, ost, pepperoni, og skinke",
+            "price": {
+                "medium": 160,
+                "stor": 260
+            }
+        },
+        {
+            "nr": 17,
+            "title": "Råde Spesial",
+            "discription": "Tomatsaus, ost, pepperoni, kjøttdeig og jalapenos",
+            "price": {
+                "medium": 160,
+                "stor": 260
+            }
+        },
+        {
+            "nr": 18,
+            "title": "Capricciosa",
+            "discription": "Tomatsaus, ost, skinke og champignon",
+            "price": {
+                "medium": 160,
+                "stor": 260
+            }
+        },
+        {
+            "nr": 19,
+            "title": "Kyllingpizza",
+            "discription": "Tomatsaus, ost, paprika, løk, champignon og kylling",
+            "price": {
+                "medium": 160,
+                "stor": 260
+            }
+        },
+        {
+            "nr": 20,
+            "title": "Napoli",
+            "discription": "Tomatsaus, ost, kyllingkjøtt, bacon og løk",
+            "price": {
+                "medium": 160,
+                "stor": 260
+            }
+        },
+        {
+            "nr": 21,
+            "title": "Roma",
+            "discription": "Tomatsaus, ost, skinke og biff",
+            "price": {
+                "medium": 160,
+                "stor": 260
+            }
+        },
+        {
+            "nr": 22,
+            "title": "Mexicana",
+            "discription": "Tomatsaus, ost, biff, champignon, bacon og løk",
+            "price": {
+                "medium": 170,
+                "stor": 270
+            }
+        },
+        {
+            "nr": 23,
+            "title": "Happy Time",
+            "discription": "Sett sammen din egen pizza med max fem varer",
+            "price": {
+                "medium": 170,
+                "stor": 270
+            }
+        },
+        {
+            "nr": 24,
+            "title": "Halmon pizza",
+            "discription": "Tomatsaus, ost, biff, champignon, jalapenos og pommes frites",
+            "price": {
+                "medium": 160,
+                "stor": 260
+            }
+        },
+        {
+            "nr": 25,
+            "title": "Fredrikstad pizza",
+            "discription": "Tomatsaus, ost, pepperoni, biff og løk",
+            "price": {
+                "medium": 160,
+                "stor": 260
+            }
+        }
+    ]
+}
