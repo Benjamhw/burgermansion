@@ -75,73 +75,47 @@ export default function SwiperCarousel({ itemData }) {
 
 const Item = props => {
   const { data } = props;
-  const [expanded, setExpanded] = useState(false);
 
-  const menuItems = [
-    {
-      nr: 1,
-      title: 'Kebab i pitabrød',
-      discription: 'Isbergsalat, tomat, mais, løk, gyroskjøtt og saus',
-      price: 110,
-    },
-    {
-      nr: 1,
-      title: 'Kebab i pitabrød',
-      discription: 'Isbergsalat, tomat, mais, løk, gyroskjøtt og saus',
-      price: 110,
-    },
-    {
-      nr: 1,
-      title: 'Kebab i pitabrød',
-      discription: 'Isbergsalat, tomat, mais, løk, gyroskjøtt og saus',
-      price: 110,
-    },
-    {
-      nr: 1,
-      title: 'Kebab i pitabrød',
-      discription: 'Isbergsalat, tomat, mais, løk, gyroskjøtt og saus',
-      price: 110,
-    },
-    {
-      nr: 1,
-      title: 'Kebab i pitabrød',
-      discription: 'Isbergsalat, tomat, mais, løk, gyroskjøtt og saus',
-      price: 110,
-    },
-  ];
+  let showSizes = data.items.some(x => typeof x.price === 'object');
 
   return (
-    <div
-      className={`${styles.itemWrapper} ${
-        expanded ? styles.itemWrapperExpanded : ''
-      }`}
-    >
+    <div className={`${styles.itemWrapper}`}>
       <div className={styles.item}>
-        <h1 onClick={() => setExpanded(!expanded)} className={styles.itemTitle}>
-          {data.name.split(' ').map((subStr, i) => (
-            <span
-              key={i}
-              style={{
-                ...(i % 2 !== 0 ? { color: 'white' } : {}),
-              }}
-            >
-              {subStr}
-            </span>
-          ))}
-        </h1>
+        <div className={styles.itemTitleWrapper}>
+          <h1 className={styles.itemTitle}>
+            {data.name.split(' ').map((subStr, i) => (
+              <span
+                key={i}
+                style={{
+                  ...(i % 2 !== 0 ? { color: 'white' } : {}),
+                }}
+              >
+                {subStr}
+              </span>
+            ))}
+          </h1>
+          {showSizes && <h1>medium / stor</h1>}
+        </div>
+
         {data.items.map((x, i) => (
           <MenuItem {...x} key={i} />
         ))}
       </div>
-      <div
-        className={`${styles.itemOverlay} ${expanded ? 'hidden' : ''}`}
-      ></div>
+      <div className={`${styles.itemOverlay}`}></div>
     </div>
   );
 };
 
 const MenuItem = props => {
   const { nr, title, discription, price } = props;
+  console.log(typeof price);
+
+  let priceElm = price;
+  if (typeof price === 'object') {
+    priceElm = `${price.medium},- / ${price.stor},-`;
+  } else {
+    priceElm = `${price},-`;
+  }
 
   return (
     <div className={styles.menuItem}>
@@ -152,7 +126,7 @@ const MenuItem = props => {
         <h1 className={styles.menuItemDiscription}>{discription}</h1>
       </div>
       <div>
-        <h1 className={styles.menuItemPrice}>{120},-</h1>
+        <h1 className={styles.menuItemPrice}>{priceElm}</h1>
       </div>
     </div>
   );
