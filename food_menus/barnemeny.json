@@ -1,0 +1,26 @@
+{
+  "name": "BARNE MENY",
+  "items": [
+    {
+      "nr": 34,
+      "title": "Barne pizza",
+      "discription": "Tomatsaus, ost og skinke",
+      "alergener": "3,4,11",
+      "price": 90
+    },
+    {
+      "nr": 35,
+      "title": "Hamburger, 70 g",
+      "discription": "Med pommes frites",
+      "alergener": "1,3,8,9",
+      "price": 90
+    },
+    {
+      "nr": 36,
+      "title": "Kyllingnuggets, 6 stk",
+      "discription": "Med salat, dressing og pommes frites",
+      "alergener": "1,3,8",
+      "price": 100
+    }
+  ]
+}

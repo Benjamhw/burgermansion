@@ -1,0 +1,67 @@
+{
+  "name": "ØVRIGE MENY",
+  "items": [
+    {
+      "nr": 100,
+      "title": "Hvitløksaus",
+      "discription": "",
+      "alergener": "1,4,7,8,11",
+      "price": 25
+    },
+    {
+      "nr": 101,
+      "title": "Kebabsaus",
+      "discription": "",
+      "alergener": "1,4,7,8,11",
+      "price": 25
+    },
+    {
+      "nr": 102,
+      "title": "Tomatsaus",
+      "discription": "",
+      "alergener": "7",
+      "price": 20
+    },
+    {
+      "nr": 103,
+      "title": "Ekstra kjøtt",
+      "discription": "",
+      "alergener": "",
+      "price": {
+        "medium": 20,
+        "stor": 30
+      }
+    },
+    {
+      "nr": 104,
+      "title": "Ekstra ost",
+      "discription": "",
+      "alergener": "",
+      "price": {
+        "medium": 20,
+        "stor": 30
+      }
+    },
+    {
+      "nr": 105,
+      "title": "Pepperoni",
+      "discription": "",
+      "alergener": "",
+      "price": 10
+    },
+    {
+      "nr": 106,
+      "title": "Jalapenos",
+      "discription": "",
+      "alergener": "",
+      "price": 10
+    },
+    {
+      "nr": 107,
+      "title": "Du kan velge mellom tre ulike sauser:",
+      "discription": "Medium, sterk og hvitløksaus",
+      "alergener": "",
+      "price": 25
+    }
+  ]
+}
