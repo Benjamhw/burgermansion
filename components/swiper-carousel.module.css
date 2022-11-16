@@ -1,48 +1,43 @@
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
-
 .container {
-    width: 100%;
-    background-color: #BD2A22;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 100%;
+  background-color: var(--black);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 .itemWrapper {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 3rem;
+  height: 30rem;
 }
 .item {
-    width: 100%;
-    max-width: 20rem;
-    background-color: inherit;
-    /* border: 2px solid black; */
-    border-radius: 2rem;
-    padding: 1rem;
+  overflow-y: scroll;
+  width: 100%;
+  max-width: 20rem;
+  background-color: inherit;
+  /* border: 2px solid black; */
+  border-radius: 2rem;
+  padding: 1rem;
 }
-.itemTitle{
-  color: black;
+.itemOverlay {
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background-image: linear-gradient(to top, var(--black) 20%, transparent);
+}
+.itemTitle {
+  color: var(--red);
   margin-bottom: 1rem;
   font-size: 1.4rem;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 .menuItem {
   display: flex;
@@ -55,20 +50,19 @@
 .menuItemTitle {
   font-size: 1.2rem;
   font-weight: 600;
-  color: white;
+  color: var(--white);
 }
 
 .menuItemDiscription {
   font-size: 0.9rem;
   font-weight: 200;
-  color: white;
+  color: var(--white);
 }
 
 .menuItemPrice {
   display: flex;
   justify-content: flex-end;
-  color: black;
+  color: var(--red);
   font-size: 1.2rem;
   font-weight: 900;
 }
-

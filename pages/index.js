@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Layout from "./layout";
-import { Source_Serif_4, Oswald } from "@next/font/google";
-import SwiperCarousel from "../components/swiper-carousel";
-import { getFoodMenuData } from "../lib/food_menus";
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import Layout from './layout';
+import { Source_Serif_4, Oswald, Caveat } from '@next/font/google';
+import SwiperCarousel from '../components/swiper-carousel';
+import { getFoodMenuData } from '../lib/food_menus';
 
 const source_serif_4 = Source_Serif_4();
 const oswald = Oswald();
@@ -18,11 +18,10 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({allFoodMenuData}) {
-  console.log(allFoodMenuData)
+export default function Home({ allFoodMenuData }) {
   return (
     <Layout>
-      <div className={`${styles.container} ${oswald.className}`}>
+      <div className={`${styles.container}`}>
         <Head>
           <title>Vinus Pizza og Kebab | Demo Nettside</title>
           <meta
@@ -33,7 +32,7 @@ export default function Home({allFoodMenuData}) {
         </Head>
         <div className={styles.headerContainer}>
           <Image
-            style={{ objectFit: "cover", objectPosition: "0 20%" }}
+            style={{ objectFit: 'cover', objectPosition: '0 20%' }}
             src="/images/kebabpizza.jpg"
             alt="Vinus Pizza og Kebab - Råde | Kebabpizza"
             fill
@@ -46,14 +45,14 @@ export default function Home({allFoodMenuData}) {
             <h1>VINUS PIZZA OG KEBAB</h1>
           </div>
         </div>
-        <SwiperCarousel itemData={allFoodMenuData}/>
+        <SwiperCarousel itemData={allFoodMenuData} />
         <footer className={styles.footer}>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Powered by{" "}
+            Powered by{' '}
             <span className={styles.logo}>
               <Image
                 src="/vercel.svg"
