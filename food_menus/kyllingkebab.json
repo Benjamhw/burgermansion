@@ -1,23 +1,26 @@
 {
-    "name": "KYLLING KEBAB",
-    "items": [
-        {
-            "nr": 31,
-            "title": "Kyllingbebab i pitabrød",
-            "discription": "Isbergsalat, tomat, mais, løk, kyllingkjøtt og saus",
-            "price": 120
-        },
-        {
-            "nr": 32,
-            "title": "Kyllingbebab-rull",
-            "discription": "Isbergsalat, tomat, løk, mais, kyllingkjøtt og saus",
-            "price": 120
-        },
-        {
-            "nr": 33,
-            "title": "Kyllingkebab-tallerken",
-            "discription": "Isbergsalat, tomat, mais, løk, pommes frites, kyllingkjøtt og saus",
-            "price": 150
-        }
-    ]
+  "name": "KYLLING KEBAB",
+  "items": [
+    {
+      "nr": 31,
+      "title": "Kyllingbebab i pitabrød",
+      "discription": "Isbergsalat, tomat, mais, løk, kyllingkjøtt og saus",
+      "alergener": "1,3,4,7,8,11,12",
+      "price": 120
+    },
+    {
+      "nr": 32,
+      "title": "Kyllingbebab-rull",
+      "discription": "Isbergsalat, tomat, løk, mais, kyllingkjøtt og saus",
+      "alergener": "1,3,4,7,8,11,12",
+      "price": 120
+    },
+    {
+      "nr": 33,
+      "title": "Kyllingkebab-tallerken",
+      "discription": "Isbergsalat, tomat, mais, løk, pommes frites, kyllingkjøtt og saus",
+      "alergener": "1,4,7,8,11,12",
+      "price": 150
+    }
+  ]
 }

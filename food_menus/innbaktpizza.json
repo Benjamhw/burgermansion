@@ -1,23 +1,26 @@
 {
-    "name": "INNBAKT PIZZA",
-    "items": [
-        {
-            "nr": 26,
-            "title": "Calzone",
-            "discription": "Tomatsaus, ost og skinke",
-            "price": 140
-        },
-        {
-            "nr": 27,
-            "title": "Romana",
-            "discription": "Tomatsaus, ost, kjøttdeig og løk",
-            "price": 150
-        },
-        {
-            "nr": 28,
-            "title": "Ferrari",
-            "discription": "Tomatsaus, ost, skinke, pepperoni og champignon",
-            "price": 150
-        }
-    ]
+  "name": "INNBAKT PIZZA",
+  "items": [
+    {
+      "nr": 26,
+      "title": "Calzone",
+      "discription": "Tomatsaus, ost og skinke",
+      "alergener": "3,4,11",
+      "price": 140
+    },
+    {
+      "nr": 27,
+      "title": "Romana",
+      "discription": "Tomatsaus, ost, kjøttdeig og løk",
+      "alergener": "3,4,11",
+      "price": 150
+    },
+    {
+      "nr": 28,
+      "title": "Ferrari",
+      "discription": "Tomatsaus, ost, skinke, pepperoni og champignon",
+      "alergener": "3,4,11",
+      "price": 150
+    }
+  ]
 }

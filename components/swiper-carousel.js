@@ -107,8 +107,7 @@ const Item = props => {
 };
 
 const MenuItem = props => {
-  const { nr, title, discription, price } = props;
-  console.log(typeof price);
+  const { nr, title, discription, price, alergener } = props;
 
   let priceElm = price;
   if (typeof price === 'object') {
@@ -121,9 +120,12 @@ const MenuItem = props => {
     <div className={styles.menuItem}>
       <div className="w-2/3">
         <h1 className={styles.menuItemTitle}>
-          {nr}. {title}
+          {nr < 100 && <>{nr}.</>} {title}
         </h1>
         <h1 className={styles.menuItemDiscription}>{discription}</h1>
+        {alergener.length > 0 && (
+          <h1 className={styles.menuItemAlergener}>//{alergener}</h1>
+        )}
       </div>
       <div>
         <h1 className={styles.menuItemPrice}>{priceElm}</h1>

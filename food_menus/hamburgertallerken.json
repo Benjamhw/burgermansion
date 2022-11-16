@@ -1,35 +1,40 @@
 {
-    "name": "HAMBURGER TALLERKEN",
-    "items": [
-        {
-            "nr": 40,
-            "title": "Hamburgertallerken 130 g",
-            "discription": "Med isbergsalat, løk, tomat, dressing, brød og pommes frites",
-            "price": 120
-        },
-        {
-            "nr": 41,
-            "title": "Hamburgertallerken 190 g",
-            "discription": "Med isbergsalat, løk, tomat, dressing, brød og pommes frites",
-            "price": 140
-        },
-        {
-            "nr": 42,
-            "title": "Hamburgertallerken 250 g",
-            "discription": "Med isbergsalat, løk, tomat, dressing, brød og pommes frites",
-            "price": 150
-        },
-        {
-            "nr": 43,
-            "title": "Pommes frites",
-            "discription": "",
-            "price": 35
-        },
-        {
-            "nr": 44,
-            "title": "Pommes frites stor",
-            "discription": "",
-            "price": 55
-        }
-    ]
+  "name": "HAMBURGER TALLERKEN",
+  "items": [
+    {
+      "nr": 40,
+      "title": "Hamburgertallerken 130 g",
+      "discription": "Med isbergsalat, løk, tomat, dressing, brød og pommes frites",
+      "alergener": "1,3,8,9,12",
+      "price": 120
+    },
+    {
+      "nr": 41,
+      "title": "Hamburgertallerken 190 g",
+      "discription": "Med isbergsalat, løk, tomat, dressing, brød og pommes frites",
+      "alergener": "1,3,8,9,12",
+      "price": 140
+    },
+    {
+      "nr": 42,
+      "title": "Hamburgertallerken 250 g",
+      "discription": "Med isbergsalat, løk, tomat, dressing, brød og pommes frites",
+      "alergener": "1,3,8,9,12",
+      "price": 150
+    },
+    {
+      "nr": 43,
+      "title": "Pommes frites",
+      "discription": "",
+      "alergener": "7",
+      "price": 35
+    },
+    {
+      "nr": 44,
+      "title": "Pommes frites stor",
+      "discription": "",
+      "alergener": "7",
+      "price": 55
+    }
+  ]
 }

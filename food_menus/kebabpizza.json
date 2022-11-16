@@ -1,50 +1,55 @@
 {
-    "name": "KEBAB PIZZA",
-    "items": [
-        {
-            "nr": 7,
-            "title": "Kebabpizza",
-            "discription": "Tomatsaus, ost, gyroskjøtt og kebabsaus",
-            "price": {
-                "medium": 160,
-                "stor": 260
-            }
-        },
-        {
-            "nr": 8,
-            "title": "Scandinavia",
-            "discription": "Tomatsaus, ost, champignon, løk, gyroskjøtt og kebabsaus",
-            "price": {
-                "medium": 160,
-                "stor": 260
-            }
-        },
-        {
-            "nr": 9,
-            "title": "Italiano",
-            "discription": "Tomatsaus, ost, skinke, løk, gyroskjøtt og kebabsaus",
-            "price": {
-                "medium": 170,
-                "stor": 270
-            }
-        },
-        {
-            "nr": 10,
-            "title": "Canada",
-            "discription": "Tomatsaus, ost, gyroskjøtt, pommes frites og kebabsaus",
-            "price": {
-                "medium": 190,
-                "stor": 290
-            }
-        },
-        {
-            "nr": 11,
-            "title": "Babylon Spesial",
-            "discription": "Tomatsaus, ost, gyroskjøtt, isbergsalat, ferske tomater og kebabsaus",
-            "price": {
-                "medium": 190,
-                "stor": 290
-            }
-        }
-    ]
+  "name": "KEBAB PIZZA",
+  "items": [
+    {
+      "nr": 7,
+      "title": "Kebabpizza",
+      "discription": "Tomatsaus, ost, gyroskjøtt og kebabsaus",
+      "alergener": "1,3,4,7,8,11,12",
+      "price": {
+        "medium": 160,
+        "stor": 260
+      }
+    },
+    {
+      "nr": 8,
+      "title": "Scandinavia",
+      "discription": "Tomatsaus, ost, champignon, løk, gyroskjøtt og kebabsaus",
+      "alergener": "1,3,4,7,8,11,12",
+      "price": {
+        "medium": 160,
+        "stor": 260
+      }
+    },
+    {
+      "nr": 9,
+      "title": "Italiano",
+      "discription": "Tomatsaus, ost, skinke, løk, gyroskjøtt og kebabsaus",
+      "alergener": "1,3,4,7,8,11,12",
+      "price": {
+        "medium": 170,
+        "stor": 270
+      }
+    },
+    {
+      "nr": 10,
+      "title": "Canada",
+      "discription": "Tomatsaus, ost, gyroskjøtt, pommes frites og kebabsaus",
+      "alergener": "1,3,4,7,8,11,12",
+      "price": {
+        "medium": 190,
+        "stor": 290
+      }
+    },
+    {
+      "nr": 11,
+      "title": "Babylon Spesial",
+      "discription": "Tomatsaus, ost, gyroskjøtt, isbergsalat, ferske tomater og kebabsaus",
+      "alergener": "1,3,4,7,8,11,12",
+      "price": {
+        "medium": 190,
+        "stor": 290
+      }
+    }
+  ]
 }
