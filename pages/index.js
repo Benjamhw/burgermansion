@@ -32,7 +32,7 @@ export default function Home({ allFoodMenuData }) {
         </Head>
         <div className={styles.headerContainer}>
           <Image
-            style={{ objectFit: 'cover', objectPosition: '0 20%' }}
+            className={styles.headerImage}
             src="/images/kebabpizza.jpg"
             alt="Vinus Pizza og Kebab - Råde | Kebabpizza"
             fill

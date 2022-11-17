@@ -39,16 +39,17 @@ export default function SwiperCarousel({ itemData }) {
             slideShadows: false,
           }}
           pagination={{
-            dynamicBullets: true,
+            dynamicBullets: false,
+            clickable: true,
           }}
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           className={styles.swiper}
           initialSlide={1}
           loop={true}
-          // autoplay={{
-          //     delay: 30000,
-          //     stopOnLastSlide: false,
-          // }}
+          autoplay={{
+            delay: 5000,
+            stopOnLastSlide: false,
+          }}
           navigation={true}
           breakpoints={{
             480: {
