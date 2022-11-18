@@ -5,6 +5,7 @@ import Layout from './layout';
 import { Source_Serif_4, Oswald, Caveat } from '@next/font/google';
 import SwiperCarousel from '../components/swiper-carousel';
 import { getFoodMenuData } from '../lib/food_menus';
+import AllergensSection from '../components/allergens';
 
 const source_serif_4 = Source_Serif_4();
 const oswald = Oswald();
@@ -46,6 +47,7 @@ export default function Home({ allFoodMenuData }) {
           </div>
         </div>
         <SwiperCarousel itemData={allFoodMenuData} />
+        <AllergensSection />
         <footer className={styles.footer}>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

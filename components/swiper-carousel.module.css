@@ -76,11 +76,3 @@
   font-size: 0.9rem;
   font-weight: 600;
 }
-.bulletActiveClass1 {
-  background-color: aqua !important;
-  width: 1rem;
-  height: 1rem;
-}
-.bulletClass1 {
-  color: blue;
-}
