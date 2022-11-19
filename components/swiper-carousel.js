@@ -7,7 +7,6 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import Image from 'next/image';
-import { useState } from 'react';
 
 export default function SwiperCarousel({ itemData }) {
   return (
@@ -16,12 +15,14 @@ export default function SwiperCarousel({ itemData }) {
         <Image
           src="/images/menuText.svg"
           alt="Kebab og pizza meny icon"
-          width="150"
-          height="50"
+          width={0}
+          height={0}
+          style={{ width: 150, height: 'auto' }}
         />
       </div>
       <div>
         <Swiper
+          aria-controls="react-aria-4"
           style={{
             '--swiper-navigation-color': '#fff',
             '--swiper-pagination-color': '#fff',
