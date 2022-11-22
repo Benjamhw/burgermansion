@@ -12,7 +12,9 @@
 }
 
 .headerImage {
-  object-fit: contain;
+  object-fit: cover;
+  object-position: 0 20%;
+  animation: test 20s linear;
 }
 
 .headerOverlay {
@@ -50,7 +52,7 @@
 
 .headerTextDiv > h3::before,
 .headerTextDiv > h3::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 160%;
   height: 1px;
@@ -67,7 +69,7 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #222;
   justify-content: center;
   align-items: center;
 }
@@ -79,9 +81,27 @@
   flex-grow: 1;
 }
 
-.logo {
-  height: 1em;
+.logoContainer {
+  width: 120px;
   margin-left: 0.5rem;
+}
+.logoContainer > div {
+  position: unset !important;
+}
+.logo {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+@keyframes test {
+  0% {
+    object-position: 0 20%;
+  }
+  100% {
+    object-position: 0 40%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -107,18 +127,5 @@
   }
   .headerTextDiv > h3::before {
     left: -120%;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
   }
 }

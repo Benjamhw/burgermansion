@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./navbar.module.css";
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from './navbar.module.css';
 
 export default function Navbar(props) {
   return (
@@ -20,8 +20,9 @@ export default function Navbar(props) {
             <Image
               src="/images/phone_icon_outlined.svg"
               alt="Phone icon"
-              width={22}
-              height={22}
+              width={0}
+              height={0}
+              style={{ width: 22, height: 'auto' }}
             />
             <h2 className={styles.number}>69 28 33 00</h2>
           </button>
@@ -31,8 +32,9 @@ export default function Navbar(props) {
             <Image
               src="/images/mobile_icon_outlined.svg"
               alt="Phone icon"
-              width={22}
-              height={22}
+              width={0}
+              height={0}
+              style={{ width: 22, height: 'auto' }}
             />
             <h2 className={styles.number}>46 19 34 64</h2>
           </button>

@@ -5,6 +5,9 @@ import Layout from './layout';
 import { Source_Serif_4, Oswald, Caveat } from '@next/font/google';
 import SwiperCarousel from '../components/swiper-carousel';
 import { getFoodMenuData } from '../lib/food_menus';
+import AllergensSection from '../components/allergens';
+import ContactSection from '../components/contact';
+import Link from 'next/link';
 
 const source_serif_4 = Source_Serif_4();
 const oswald = Oswald();
@@ -32,10 +35,11 @@ export default function Home({ allFoodMenuData }) {
         </Head>
         <div className={styles.headerContainer}>
           <Image
-            style={{ objectFit: 'cover', objectPosition: '0 20%' }}
+            className={styles.headerImage}
             src="/images/kebabpizza.jpg"
             alt="Vinus Pizza og Kebab - Råde | Kebabpizza"
             fill
+            priority
           />
           <div className={styles.headerOverlay}></div>
           <div
@@ -46,22 +50,24 @@ export default function Home({ allFoodMenuData }) {
           </div>
         </div>
         <SwiperCarousel itemData={allFoodMenuData} />
+        <AllergensSection />
+        <ContactSection />
         <footer className={styles.footer}>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          <Link
+            href="https://wetobo.no"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Powered by{' '}
-            <span className={styles.logo}>
+            Designet og utviklet av{' '}
+            <div className={styles.logoContainer}>
               <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                width={72}
-                height={16}
+                src="/images/wetobo_logo_full.png"
+                alt="Wetobo Digital Solutions Logo"
+                fill
+                className={styles.logo}
               />
-            </span>
-          </a>
+            </div>
+          </Link>
         </footer>
       </div>
     </Layout>

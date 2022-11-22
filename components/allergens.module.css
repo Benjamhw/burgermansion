@@ -1,0 +1,42 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(189, 189, 189);
+  padding: 0 2.3rem;
+  background-color: var(--black);
+}
+.wrapper > h1 {
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid var(--white);
+  padding: 1rem;
+}
+.wrapper h1 > span {
+  display: inline-block;
+  transition: all 0.3s ease-in;
+  transform-origin: 5px 13px;
+}
+.collapse {
+  color: var(--white);
+}
+.container {
+  display: grid;
+  column-gap: 2rem;
+  font-weight: 100;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 390px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 700px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -7,7 +7,6 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import Image from 'next/image';
-import { useState } from 'react';
 
 export default function SwiperCarousel({ itemData }) {
   return (
@@ -16,12 +15,14 @@ export default function SwiperCarousel({ itemData }) {
         <Image
           src="/images/menuText.svg"
           alt="Kebab og pizza meny icon"
-          width="150"
-          height="50"
+          width={0}
+          height={0}
+          style={{ width: 150, height: 'auto' }}
         />
       </div>
       <div>
         <Swiper
+          aria-controls="react-aria-4"
           style={{
             '--swiper-navigation-color': '#fff',
             '--swiper-pagination-color': '#fff',
@@ -39,16 +40,17 @@ export default function SwiperCarousel({ itemData }) {
             slideShadows: false,
           }}
           pagination={{
-            dynamicBullets: true,
+            dynamicBullets: false,
+            clickable: true,
           }}
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           className={styles.swiper}
           initialSlide={1}
           loop={true}
-          // autoplay={{
-          //     delay: 30000,
-          //     stopOnLastSlide: false,
-          // }}
+          autoplay={{
+            delay: 5000,
+            stopOnLastSlide: false,
+          }}
           navigation={true}
           breakpoints={{
             480: {

@@ -24,6 +24,7 @@
   border-radius: 2rem;
   padding: 1rem;
   padding-bottom: 2rem;
+  color: var(--white);
 }
 .itemOverlay {
   pointer-events: none;
