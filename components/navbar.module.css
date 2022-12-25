@@ -1,26 +1,31 @@
 .navbar {
   width: 100%;
-  background-color: rgb(18, 18, 18);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  background-color: rgba(18, 18, 18, 0);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   padding: 0.75rem;
-  padding-left: 1.25rem/* 20px */;
-  padding-right: 1.25rem/* 20px */;
+  padding-left: 1.25rem /* 20px */;
+  padding-right: 1.25rem /* 20px */;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 9999;
+  transition: all 0.2s linear;
+}
+.navbarScrolled {
+  background-color: rgba(2, 2, 2, 0.5) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .logo {
-  width: 20rem;
+  width: 5rem;
 }
 
 .phoneContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .callbutton {
@@ -45,19 +50,20 @@
 .number {
   margin-left: 1.2rem;
   font-size: large;
+  display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 700px) {
   .logo {
-    width: 12rem;
+    width: 5rem;
   }
   .phoneContainer {
-    flex-direction: row;
+    flex-direction: column;
   }
   .callbutton {
     margin-right: 0.2rem;
   }
   .number {
-    display: none;
+    display: unset;
   }
 }

@@ -13,9 +13,9 @@ import Link from 'next/link';
 export default function ContactSection(props) {
   const contactItems = [
     {
-      text: '69 28 33 00',
+      text: '67 90 90 67',
       icon: <AiFillPhone />,
-      url: 'tel:69283300',
+      url: 'tel:67909067',
     },
     {
       text: '46 19 34 64',
@@ -28,9 +28,9 @@ export default function ContactSection(props) {
       url: 'mailto:vinus.kebab@icloud.com',
     },
     {
-      text: 'Vinus, Mosseveien 16, 1640 Råde',
+      text: 'Kongens Gate 28, 1530 Moss',
       icon: <IoMdPin />,
-      url: 'http://maps.google.com/?q=Vinus, Mosseveien 16, 1640 Råde',
+      url: 'https://www.google.com/maps/place/Burger+Mansion+Moss/@59.4359674,10.6653747,17z/data=!3m1!4b1!4m5!3m4!1s0x4641530b3a755779:0x73a97044caeef1e8!8m2!3d59.4359674!4d10.6679496',
     },
     {
       text: '@vinuskebab',
@@ -51,9 +51,9 @@ export default function ContactSection(props) {
           <h1>Åpningstider</h1>
           <div className={styles.openingHours}>
             <p>man - fre</p>
-            <h2>12:30 - 21:30</h2>
+            <h2>16:00 - 21:00</h2>
             <p>lør - søn</p>
-            <h2>12:30 - 21:30</h2>
+            <h2>16:00 - 21:00</h2>
           </div>
         </div>
         <div>

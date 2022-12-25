@@ -26,18 +26,18 @@ export default function Home({ allFoodMenuData }) {
     <Layout>
       <div className={`${styles.container}`}>
         <Head>
-          <title>Vinus Pizza og Kebab | Demo Nettside</title>
+          <title>Burger Mansion Moss | Demo Nettside</title>
           <meta
             name="description"
-            content="Demo nettside for Vinus Pizza og Kebab Råde."
+            content="Demo nettside for Burger Mansion Moss."
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className={styles.headerContainer}>
           <Image
             className={styles.headerImage}
-            src="/images/kebabpizza.jpg"
-            alt="Vinus Pizza og Kebab - Råde | Kebabpizza"
+            src="/images/hamburgerHeader.webp"
+            alt="Burger Mansion | Burger"
             fill
             priority
           />
@@ -45,8 +45,8 @@ export default function Home({ allFoodMenuData }) {
           <div
             className={`${source_serif_4.className} ${styles.headerTextDiv}`}
           >
-            <h3>WELKOMMEN TIL</h3>
-            <h1>VINUS PIZZA OG KEBAB</h1>
+            <h3>VELKOMMEN TIL</h3>
+            <h1>BURGER MANSION MOSS</h1>
           </div>
         </div>
         <SwiperCarousel itemData={allFoodMenuData} />
